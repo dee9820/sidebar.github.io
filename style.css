@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg.jpg.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover; 
+    display: flex;
+    /* text-align: center; */
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 50px;
+    /* margin: auto; */
+}
+
+
+li img{
+    height: 30px;
+    width: 30px;
+    margin-right: 0px;
+}
+
+.sidebar{
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    transition: width 0.5s;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.logo div{
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0 15px;
+}
+
+ul li{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+ul li p{
+    white-space: nowrap;
+    display: none;
+    color: black;
+}
+
+ul li a{
+    text-decoration: none;
+    
+}
+
+.sidebar:hover{
+    width: 250px;
+}
+
+.sidebar:hover .logo div{
+    display: block;
+}
+
+.sidebar:hover .logo{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.sidebar:hover .logo img{
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+.sidebar:hover ul li p{
+    display: block;
+}
+
+.sidebar:hover ul li img{
+    margin-right: 10px;
+}
+
+.sidebar:hover ul li{
+    justify-content: flex-start;
+}
+
+.body{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+}
+
+.body p{
+    color: wheat;
+}
+
+.firstsection {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+
+.boxmain {
+    margin-left: 15px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #a6a6a6;
+    /* background-color: blue; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auto-slider {
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 10px 10px 20px;
+    background: white;
+    max-width: 375px;
+    max-height: 410px;
+    margin: 15px 45px;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px rgba(97, 80, 80, 0.925);
+
+}
+
+#contact{
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    font-size: 6vh;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("https://tmhugheselectrical.co.uk/wp-content/uploads/2018/04/contact-us.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 70%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+
+}
+
+button {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    /* position: relative; */
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    color: #ff7200;
+}
+
+.content h1{
+    text-align: left;
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    /* margin-top: 9%; */
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 65px
+}
